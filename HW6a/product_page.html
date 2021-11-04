@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+
+    </header>
+    <nav class="navbar">
+        <div id="nav_logo">
+            <a href="home.html"><img src="logo.png" alt="Bun Bun Bake Shop"/></a>
+        </div>
+        <div id="nav_item_container">
+            <a class="nav_item" href="browse_deliv.html">Order Delivery</a>
+            <a class="nav_item" href="browse_pick.html">Order Pickup</a>
+            <a class="nav_item" href="find_us.html">Find Us</a>
+            <a class="nav_item" href="about.html">About</a>
+            <a class="nav_item" href="cart.html">Cart</a>
+        </div>
+    </nav>
+    <body>
+        <div class= "product_page_flex_container">
+            <div class="product_image_wrapper">
+                <img src="assets/bunproduct.png" alt = "a cinnamon roll">
+            </div>
+            <div class="product_info_container">
+                <div class="product_descr_container">
+                    <h2>(Roll Flavor)</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="ingredients.html"><p class="underline_text">See full ingredients list</p></a>
+                </div>
+                <div class="product_options_container">
+                    <div class="flex_row">
+                        <div class="flex_column">
+                            <p>Glazes</p>
+                            <!-- from w3 -->
+                            <div>
+                                <input type="radio" id="" name="glaze" value="sugar-milk">
+                                <label for="sugar-milk">sugar-milk</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="" name="glaze" value="vanilla-milk">
+                                <label for="vanilla-milk">vanilla-milk</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="" name="glaze" value="double chocolate">
+                                <label for="double chocolate">double chocolate</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="" name="glaze" value="none">
+                                <label for="none">none</label><br>
+                            </div>
+                        </div>
+                        <div class="flex_column">
+                            <p>Quantity</p>
+                            <!-- from w3 -->
+                            <div>
+                                <input type="radio" id="1" name="qty" value="1">
+                                <label for="1">1</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="1" name="qty" value="3">
+                                <label for="3">3</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="6" name="qty" value="6">
+                                <label for="6">6</label><br>
+                            </div>
+                            <div>
+                                <input type="radio" id="12" name="qty" value="12">
+                                <label for="12">12</label><br>
+                            </div>
+                    </div>
+                </div>
+                <div>
+                    <button class="order_button orange_button white_text">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+</html>

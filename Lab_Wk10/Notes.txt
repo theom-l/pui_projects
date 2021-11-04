@@ -1,0 +1,5 @@
+Animations
+    Changing CSS proeperties in JS
+    square.addEventListener('click', function ()) {
+            square.style.left = '300px';
+    });

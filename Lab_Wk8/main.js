@@ -74,5 +74,4 @@ function Cat(name, age) {
         onclick("save_button")
         var txt = document.getElementById("feedback_message").textContent = "Saved!"
     }
-  
   };

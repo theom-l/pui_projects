@@ -1,0 +1,25 @@
+body {
+  margin: 0px;
+}
+
+#square {
+  position: fixed;
+
+  top: 100px;
+  left: 100px;
+
+  width: 100px;
+  height: 100px;
+
+  background-color: darkorange;
+
+  transition-property: border-radius, background-color;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0s, 1s;
+}
+
+.rounded {
+  border-radius: 50px;
+  background-color: green !important;
+}

@@ -1,0 +1,30 @@
+Animations
+    Changing CSS proeperties in JS
+    square.addEventListener('click', function ()) {
+            square.style.left = '300px';
+
+        square.classlist.toggle('rounded') 
+        (classlist is an interface for the list of all the classes)
+        (This adds the rounded class to the square as a toggle)
+
+
+    });
+
+
+Remeber ID>Class in specificity rules
+add !important to the class to override in style.css
+Best for selected, hover, activated states for objects
+
+marksheet.io for proepertie
+
+Timing functions
+        Specificying bezier curves for Animations
+        cubic-bezier.com
+
+CSS Animations  
+        define keyframes
+        then add proeperties 
+
+Add squareTwo class use bezier to make more natural
+Add event listener for paused state
+
