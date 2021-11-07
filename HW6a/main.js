@@ -10,42 +10,42 @@ function AddToCart() {
 }
 
 function smUpdate() {
-    document.getElementById('product_pic').src="blue.png"
+    document.getElementById('product_pic').src="assets/blue.png"
 
 }
 
 function vmUpdate() {
-    document.getElementById('product_pic').src="red.png"
+    document.getElementById('product_pic').src="assets/red.png"
     
 }
 
 function dcUpdate() {
-    document.getElementById('product_pic').src="purp.png"
+    document.getElementById('product_pic').src="assets/purp.png"
     
 }
 
 function nUpdate() {
-    document.getElementById('product_pic').src="green.png"
+    document.getElementById('product_pic').src="assets/green.png"
     
 }
 
 function oneUpdate() {
-    document.getElementById('product_pic').src="orange.png"
+    document.getElementById('product_pic').src="assets/orange.png"
     
 }
 
 function threeUpdate() {
-    document.getElementById('product_pic').src="red.png"
+    document.getElementById('product_pic').src="assets/red.png"
     
 }
 
 function sixUpdate() {
-    document.getElementById('product_pic').src="gray.png"
+    document.getElementById('product_pic').src="assets/gray.png"
     
 }
 
 function twelveUpdate() {
-    document.getElementById('product_pic').src="white.png"
+    document.getElementById('product_pic').src="assets/white.png"
     
 }
 
