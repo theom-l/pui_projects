@@ -1,6 +1,11 @@
 
+let cart_counter = 0
+
+/* Add to cart function, updates cart counter, displays message in button, with timeout */
 function AddToCart() {
     document.getElementById('AddToCart').innerHTML = "Added!"
+    cart_counter = cart_counter + 1
+    document.getElementById('cart_counter').innerHTML = cart_counter
 
     function ChangeBack () { 
         document.getElementById('AddToCart').innerHTML = "Add to cart"
@@ -9,6 +14,7 @@ function AddToCart() {
     setTimeout(ChangeBack, 1500)
 }
 
+/*  */
 function smUpdate() {
     document.getElementById('product_pic').src="assets/blue.png"
 
