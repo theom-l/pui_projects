@@ -3,13 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <header>
 
     </header>
     <nav class="navbar">
         <div id="nav_logo">
-            <a href="home.html"><img src="logo.png" alt="Bun Bun Bake Shop"/></a>
+            <a href="index.html"><img src="logo.png" alt="Bun Bun Bake Shop"/></a>
         </div>
         <div id="nav_item_container">
             <a class="nav_item" href="browse_deliv.html">Order Delivery</a>
@@ -22,7 +23,7 @@
     <body>
         <div class= "product_page_flex_container">
             <div class="product_image_wrapper">
-                <img src="assets/bunproduct.png" alt = "a cinnamon roll">
+                <img src="assets/bunproduct.png" alt = "a cinnamon roll" id="product_pic">
             </div>
             <div class="product_info_container">
                 <div class="product_descr_container">
@@ -36,19 +37,19 @@
                             <p>Glazes</p>
                             <!-- from w3 -->
                             <div>
-                                <input type="radio" id="" name="glaze" value="sugar-milk">
+                                <input type="radio" id="sugar-milk" name="glaze" value="sugar-milk" onclick="smUpdate()">
                                 <label for="sugar-milk">sugar-milk</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="" name="glaze" value="vanilla-milk">
+                                <input type="radio" id="vanilla-milk" name="glaze" value="vanilla-milk" onclick="vmUpdate())">
                                 <label for="vanilla-milk">vanilla-milk</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="" name="glaze" value="double chocolate">
+                                <input type="radio" id="double-chocolate" name="glaze" value="double chocolate" onclick="dcUpdate()">
                                 <label for="double chocolate">double chocolate</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="" name="glaze" value="none">
+                                <input type="radio" id="none" name="glaze" value="none" onclick="nUpdate()">
                                 <label for="none">none</label><br>
                             </div>
                         </div>
@@ -56,25 +57,25 @@
                             <p>Quantity</p>
                             <!-- from w3 -->
                             <div>
-                                <input type="radio" id="1" name="qty" value="1">
+                                <input type="radio" id="1qty" name="qty" value="1" onclick="oneUpdate()">
                                 <label for="1">1</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="1" name="qty" value="3">
+                                <input type="radio" id="3qty" name="qty" value="3" onclick="threeUpdate()">
                                 <label for="3">3</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="6" name="qty" value="6">
+                                <input type="radio" id="6qty" name="qty" value="6" onclick="sixUpdate()">
                                 <label for="6">6</label><br>
                             </div>
                             <div>
-                                <input type="radio" id="12" name="qty" value="12">
+                                <input type="radio" id="12qty" name="qty" value="12" onclick="twelveUpdate()">
                                 <label for="12">12</label><br>
                             </div>
                     </div>
                 </div>
                 <div>
-                    <button class="order_button orange_button white_text">Add to Cart</button>
+                    <button type="button" class="order_button orange_button white_text" id="AddToCart" onclick="AddToCart()">Add to cart</button>
                 </div>
             </div>
         </div>

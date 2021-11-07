@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script>src="main.js"</script>
     </head>
     <header>
 
@@ -25,23 +26,32 @@
             <a href="browse_pick.html"><button class="order_state_button orange_button button_text" type="button">Ordering delivery - click to change</button></a>
         </div>
 
-        <!-- tile grid -->
-        <div class="grid_container">
-            <div>
-                <h3 class="underline_text">Cart</h3>
+        <div class= "cart_page_flex_container">
+            <div class="flex_column">
+                <div class="flex_row">
+                    <h5 class="underline_text">Cart</h5>
+                </div>
             </div>
-            <div class="browse_flex_row">
-                <div class="browse_flex_column">
-                    <div>
-                        <h3 class="underline_text">Cart</h3>
+            <div class="flex_column">
+                <div class="flex_row">
+                    <div class="flex_column">
+                        <p> Subtotal</p>
+                        <p> tax</p>
+                        <p> Subtotal</p>
                     </div>
-                    
-                    
+                    <div class="flex_column">
+                        <p> $36.00</p>
+                        <p> $3.62</p>
+                        <p> $39.00</p>
+                    </div>
+                </div> 
+                <div class="flex_row">
+                    <div>
+                        <button class="order_button orange_button white_text">Checkout</button>
+                    </div>
                 </div>
-                <div class="browse_flex_column">
-                   
-                </div>
-            </div>
+            </div>   
+            
         </div>
     </body>
     <footer>
