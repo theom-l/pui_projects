@@ -119,6 +119,62 @@ function AddToCart() {
     setTimeout(ChangeBack, 1500)
 }
 
+function AddToWishlist() {
+
+    // Check radio buttons 
+    var selected1 = document.querySelector('input[name="qty"]:checked');
+    if(selected1 != null) {   
+    var qty = selected1.value; 
+    }  
+
+    var selected2 = document.querySelector('input[name="glaze"]:checked');
+    if(selected2 != null) {   
+    var glaze = selected2.value;
+    } 
+
+    //Check Flavor
+    let flavor = document.getElementById("RollFlavor").innerHTML
+
+    //set price param based on radio selections
+    if (qty == 1) {
+        var price = 3.00
+    }
+
+    else if (qty == 3) {
+        var price = 9.00
+    }
+
+    else if (qty == 6) {
+        var price = 18.00
+    }
+
+    else if (qty == 12) {
+        var price = 36.00
+    }
+
+    //set wishlist
+    let wishlist = []
+    if (!localStorage.getItem("savedwishlist")) { //checks if it exists yet
+        localStorage.setItem("savedwishlist", JSON.stringify([])) 
+     }
+     else {
+         wishlist = JSON.parse(localStorage.getItem('savedwishlist'))
+     }
+
+     //add new to sihlist
+    const item1 = new cart_item(flavor, glaze, qty, price);
+    wishlist.push(item1);
+    console.log(wishlist)
+
+    localStorage.setItem("savedwishlist", JSON.stringify(wishlist));
+
+    // Display message
+    document.getElementById('AddToWishlist').innerHTML = "Added!"
+    function ChangeBack () { 
+        document.getElementById('AddToWishlist').innerHTML = "Add to wishlist"
+    }
+    setTimeout(ChangeBack, 1500)
+}
 
 
 /* 

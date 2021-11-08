@@ -247,7 +247,11 @@ label {
 }
 
 #AddToCart { 
-    margin-top: 80px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+#AddToWishlist { 
     width: 100%;
 }
 
@@ -299,7 +303,8 @@ hr {
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 28px;
+    line-height: 20px;
+    padding-bottom: 10px;
 }
 .totals-wrapper { 
     width: 900px;
@@ -326,10 +331,14 @@ hr {
     width: 100%
 }
 
-#remove { 
-    float: right;
-    font-size: 12pt;
+.remove_button { 
+    font-size: 9pt;
     color: #F18B12;
+    background-color: transparent;
+    border: none;
+    margin: none;
+    padding: none;
+    text-decoration: underline;
 }
 
 #cart-item-template { 
