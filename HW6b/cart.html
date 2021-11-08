@@ -21,37 +21,48 @@
         </div>
     </nav>
     <body>
-        <!-- button to change state -->
-        <div>
-            <a href="browse_pick.html"><button class="order_state_button orange_button button_text" type="button">Ordering delivery - click to change</button></a>
-        </div>
-
-        <div class= "cart_page_flex_container">
-            <div class="flex_column">
-                <div class="flex_row">
-                    <h5 class="underline_text">Cart</h5>
+        <div class= "cart_page_container">
+            <div class="Cart-title">
+                <h5 class="underline_text">Cart</h5>
+            </div>
+            <div class="cart-flex-row">
+                <div class="flex-item-70-horz">
+                    Item
+                </div>
+                <div class="flex-item-15-horz">
+                    Quantity
+                </div>
+                <div class="flex-item-15-horz">
+                    Price
                 </div>
             </div>
-            <div class="flex_column">
-                <div class="flex_row">
-                    <div class="flex_column">
-                        <p> Subtotal</p>
-                        <p> tax</p>
-                        <p> Subtotal</p>
+            <hr>
+            <template id=“cart-item-template”>
+                <div class="cart-flex-row">
+                    <div class="flex-item-70-horz" id="cart_name">
+                        Item
                     </div>
-                    <div class="flex_column">
-                        <p> $36.00</p>
-                        <p> $3.62</p>
-                        <p> $39.00</p>
+                    <div class="flex-item-15-horz" id="cart_quantity">
+                        Quantity
                     </div>
-                </div> 
-                <div class="flex_row">
-                    <div>
-                        <button class="order_button orange_button white_text">Checkout</button>
+                    <div class="flex-item-15-horz" id="cart_price">
+                        Price
+                        <span id="remove_button" onclick="RemoveFromCart">remove</span>
                     </div>
                 </div>
-            </div>   
-            
+            </template>
+        </div>
+        <div class="totals-wrapper">
+            <div class="totals">
+                <div class="cart-flex-row">
+                    <div class="flex-item-33-horz">Total</div>
+                    <div class="flex-item-33-horz">qty</div>
+                    <div class="flex-item-33-horz">amount</div>
+                </div>
+                <div>
+                    <button type="button" class="order_button orange_button white_text" id="Checkout">Checkout</button>
+                </div>
+            </div>
         </div>
     </body>
     <footer>
