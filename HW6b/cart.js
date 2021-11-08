@@ -25,6 +25,7 @@ function displayCart() {
         console.log(clone);
         cartDiv.appendChild(clone);
     }
+
 }
 displayCart()
 
@@ -38,7 +39,7 @@ function RemoveFromCart () {
          cart = JSON.parse(localStorage.getItem('savedcart'))
     }
 
-    this.parentElement.parentElement.remove()
+    this.parentElement.remove()
 
 
 }
