@@ -23,24 +23,13 @@ function displayCart() {
         clone.querySelector('.cart_qty').innerHTML = cart_item.qty;
         clone.querySelector('.cart_price').innerHTML= cart_item.price;
         console.log(clone);
+        const remove_button = clone.querySelector(".remove_button");
+        remove_button.addEventListener('click', function() {
+            this.parentElement.parentElement.remove ()
+        })
         cartDiv.appendChild(clone);
     }
 
 }
 displayCart()
-
-function RemoveFromCart () {
-
-    let cart = []
-    if (!localStorage.getItem("savedcart")) { //checks if it exists yet
-        localStorage.setItem("savedcart", JSON.stringify([])) 
-    }
-    else {
-         cart = JSON.parse(localStorage.getItem('savedcart'))
-    }
-
-    this.parentElement.remove()
-
-
-}
 
