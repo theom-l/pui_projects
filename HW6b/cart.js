@@ -27,6 +27,16 @@ function displayCart() {
 
     /* console.log(template) */
 
+    var qty_total = 0
+    var price_total = 0
+    for (let i = 0; i < cart.length; i++ ) {
+        let cart_item = cart[i];
+        price_total = price_total + cart_item.price
+        qty_total = qty_total + cart_item.price
+    }
+    document.getElementById("totalprice").innerHTML = price_total;
+    document.getElementById("totalqty").innerHTML = qty_total;
+
     for (let i = 0; i < cart.length; i++ ) {
         let cart_item = cart[i];
         /* console.log(cart_item); */
