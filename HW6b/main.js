@@ -139,7 +139,7 @@ function displayCart () {
 
 function RemoveFromCart () {
 
-    this.parentElement.remove()
+    this.parentElement.parentElement.remove()
 
 }
 /* 
@@ -150,6 +150,9 @@ function RemoveFromCart () {
 
 
 
+
+
+/* 
 
 const sugarmilk  = document.getElementById('sugar-milk');
 sugarmilk.addEventListener('click', function() {
