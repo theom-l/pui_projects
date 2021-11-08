@@ -3,7 +3,8 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <script type="text/javascript" src="main.js"></script>
+        <script defer type="text/javascript" src="main.js"></script>
+        <script defer type="text/javascript" src="cart.js"></script>
     </head>
     <header>
 
@@ -20,7 +21,7 @@
             <a class="nav_item" href="cart.html">Cart <span id="cart_counter">0</span></a>
         </div>
     </nav>
-    <body onload= "displayCart()">
+    <body>
         <div class= "cart_page_container">
             <div class="Cart-title">
                 <h5 class="underline_text">Cart</h5>
@@ -38,17 +39,20 @@
             </div>
             <hr>
             <div class="cart-flex-row">
-                <template id=“cart-item-template”>
-                    <div class="flex-item-70-horz" class="cart_flavor">
-                        Item
-                        <span class="cart_glaze"></span>
-                    </div>
-                    <div class="flex-item-15-horz" class="cart_quantity">
-                        Quantity
-                    </div>
-                    <div class="flex-item-15-horz" class="cart_price">
-                        <p>Price</p>
-                        <button class="remove_button" onclick="RemoveFromCart()">Remove</button>
+                <template id="cart-item-template">
+                    <div class="cart_flavor">Item</div>
+                    <div>
+                        <div class="flex-item-70-horz">
+                            <div class="cart_flavor">Item</div>
+                            <div class="cart_glaze"> glaze</div>
+                        </div>
+                        <div class="flex-item-15-horz cart_quantity">
+                            Quantity
+                        </div>
+                        <div class="flex-item-15-horz">
+                            <div class="cart_price">Price</div>
+                            <button class="remove_button" onclick="RemoveFromCart()">Remove</button>
+                        </div>
                     </div>
                 </template>
             </div>
@@ -60,7 +64,6 @@
                     <div class="flex-item-33-horz">qty</div>
                     <div class="flex-item-33-horz">amount</div>
                 </div>
-                <div>
                     <button type="button" class="order_button orange_button white_text" id="Checkout">Checkout</button>
                 </div>
             </div>
