@@ -1,3 +1,16 @@
+function cartCountUpdate () {
+    let cart = []
+    if (!localStorage.getItem("savedcart")) { //checks if it exists yet
+        localStorage.setItem("savedcart", JSON.stringify([])) 
+     }
+     else {
+         cart = JSON.parse(localStorage.getItem('savedcart'))
+
+     }
+    document.getElementById("cart_counter").innerHTML = cart.length;
+}
+cartCountUpdate ()
+
 function displayCart() { 
 
     let cart = []
@@ -30,6 +43,7 @@ function displayCart() {
             cart.splice(cart[i],1)
             /* console.log(cart) */
             localStorage.setItem("savedcart", JSON.stringify(cart))
+            cartCountUpdate ()
         })
 
         cartDiv.appendChild(clone);
