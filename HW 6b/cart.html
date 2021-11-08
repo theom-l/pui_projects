@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <header>
+
+    </header>
+    <nav class="navbar">
+        <div id="nav_logo">
+            <a href="index.html"><img src="logo.png" alt="Bun Bun Bake Shop"/></a>
+        </div>
+        <div id="nav_item_container">
+            <a class="nav_item" href="browse_deliv.html">Order Delivery</a>
+            <a class="nav_item" href="browse_pick.html">Order Pickup</a>
+            <a class="nav_item" href="find_us.html">Find Us</a>
+            <a class="nav_item" href="about.html">About</a>
+            <a class="nav_item" href="cart.html">Cart<span id="cart_counter">0</span></a>
+        </div>
+    </nav>
+    <body>
+        <!-- button to change state -->
+        <div>
+            <a href="browse_pick.html"><button class="order_state_button orange_button button_text" type="button">Ordering delivery - click to change</button></a>
+        </div>
+
+        <div class= "cart_page_flex_container">
+            <div class="flex_column">
+                <div class="flex_row">
+                    <h5 class="underline_text">Cart</h5>
+                </div>
+            </div>
+            <div class="flex_column">
+                <div class="flex_row">
+                    <div class="flex_column">
+                        <p> Subtotal</p>
+                        <p> tax</p>
+                        <p> Subtotal</p>
+                    </div>
+                    <div class="flex_column">
+                        <p> $36.00</p>
+                        <p> $3.62</p>
+                        <p> $39.00</p>
+                    </div>
+                </div> 
+                <div class="flex_row">
+                    <div>
+                        <button class="order_button orange_button white_text">Checkout</button>
+                    </div>
+                </div>
+            </div>   
+            
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+</html>
