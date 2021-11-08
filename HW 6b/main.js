@@ -43,8 +43,7 @@ function twelveUpdate() {
     
 }
 
-/* Obj constructor */
-
+//Obj constructor
 function cart_item (flavor, glaze, qty, price) {
     this.flavor = flavor;
     this.glaze = glaze;
@@ -52,68 +51,57 @@ function cart_item (flavor, glaze, qty, price) {
     this.price =  price;
 } 
 
-/* TODO Radio button selection */ 
-/* document.getSelection(
-
-
-
-var flavorSelection = document.getSelection()
-var  */
-
-/* Add to cart function, updates cart counter, displays message in button, with timeout */
-
 function AddToCart() {
 
     // Check radio buttons 
-    /* let buttonChecked = ""
-    var radioButtons = document.getElementsByTagName("input")
-    for (let button of radioButtons) {
-    if (button.checked) buttonChecked = button.value;
-    } */
-
-
-    var selected = document.querySelector('input [type=radio][name="qty"]:checked');
-    if(selected != null) {   
-    var qty = selected.value; 
-    console.log (qty) 
+    var selected1 = document.querySelector('input[name="qty"]:checked');
+    if(selected1 != null) {   
+    var qty = selected1.value; 
     }  
 
-    var selected = document.querySelector('input [type=radio][name="glaze"]:checked');
-    if(selected != null) {   
-    var glaze = selected.value;
-    console.log (glaze)
+    var selected2 = document.querySelector('input[name="glaze"]:checked');
+    if(selected2 != null) {   
+    var glaze = selected2.value;
     } 
 
+    //Check Flavor
+    let flavor = document.getElementById("RollFlavor").innerHTML
+
     //set price param based on radio selections
-    if (qty = "1") {
-    var price = 3.00
+    if (qty == 1) {
+        var price = 3.00
     }
 
-    else if (qty = "3") {
-    var price = 9.00
+    else if (qty == 3) {
+        var price = 9.00
     }
 
-    else if (qty = "6") {
-    var price = 18.00
+    else if (qty == 6) {
+        var price = 18.00
     }
 
-    else if (qty = "12") {
-    var price = 36.00
+    else if (qty == 12) {
+        var price = 36.00
     }
 
-    /* const cart = [];
-    localStorage.setItem('savedCart', JSON.stringify(cart));
-    if (!localStorage.getItem("cart")) { //checks if it exists yet
-        localStorage.setItem("cart", JSON.stringify([])) 
+    //set cart
+    let cart = []
+    if (!localStorage.getItem("savedcart")) { //checks if it exists yet
+        localStorage.setItem("savedcart", JSON.stringify([])) 
+     }
+     else {
+         cart = JSON.parse(localStorage.getItem('savedcart'))
+
      }
 
-
-    const item1 = new cart_item (flavor, qty, glaze, price);
-    const storedValue = JSON.parse(localStorage.getItem('savedCart'))
-    const cart = storedValue
+     //add new to cart
+    const item1 = new cart_item(flavor, glaze, qty, price);
     cart.push(item1);
- */
+    //console.log(cart)
 
+    localStorage.setItem("savedcart", JSON.stringify(cart));
+
+    // Display message
     document.getElementById('AddToCart').innerHTML = "Added!"
     function ChangeBack () { 
         document.getElementById('AddToCart').innerHTML = "Add to cart"
