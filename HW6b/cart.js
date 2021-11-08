@@ -20,8 +20,9 @@ function displayCart() {
         var clone = template.content.cloneNode(true);
         clone.querySelector('.cart_flavor').innerText = cart_item.flavor;
         clone.querySelector('.cart_glaze').innerText = cart_item.glaze;
-        clone.querySelector('.cart_qty').innerText = cart_item.qty;
-        clone.querySelector('.cart_price').innerText = cart_item.price;
+        clone.querySelector('.cart_qty').innerHTML = cart_item.qty;
+        clone.querySelector('.cart_price').innerHTML= cart_item.price;
+        console.log(clone);
         cartDiv.appendChild(clone);
     }
 }
