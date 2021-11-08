@@ -8,7 +8,6 @@ function cartCountUpdate () {
          cart = JSON.parse(localStorage.getItem('savedcart'))
 
      }
-    
     document.getElementById("cart_counter").innerHTML = cart.length;
 }
 cartCountUpdate ()
