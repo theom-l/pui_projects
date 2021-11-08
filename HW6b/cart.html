@@ -17,15 +17,15 @@
             <a class="nav_item" href="browse_pick.html">Order Pickup</a>
             <a class="nav_item" href="find_us.html">Find Us</a>
             <a class="nav_item" href="about.html">About</a>
-            <a class="nav_item" href="cart.html">Cart<span id="cart_counter">0</span></a>
+            <a class="nav_item" href="cart.html">Cart <span id="cart_counter">0</span></a>
         </div>
     </nav>
-    <body>
+    <body onload= "displayCart()">
         <div class= "cart_page_container">
             <div class="Cart-title">
                 <h5 class="underline_text">Cart</h5>
             </div>
-            <div class="cart-flex-row">
+            <div class="cart-flex-row" id="cart-header">
                 <div class="flex-item-70-horz">
                     Item
                 </div>
@@ -37,20 +37,21 @@
                 </div>
             </div>
             <hr>
-            <template id=“cart-item-template”>
-                <div class="cart-flex-row">
-                    <div class="flex-item-70-horz" id="cart_name">
+            <div class="cart-flex-row">
+                <template id=“cart-item-template”>
+                    <div class="flex-item-70-horz" class="cart_flavor">
                         Item
+                        <span class="cart_glaze"></span>
                     </div>
-                    <div class="flex-item-15-horz" id="cart_quantity">
+                    <div class="flex-item-15-horz" class="cart_quantity">
                         Quantity
                     </div>
-                    <div class="flex-item-15-horz" id="cart_price">
-                        Price
-                        <span id="remove_button" onclick="RemoveFromCart">remove</span>
+                    <div class="flex-item-15-horz" class="cart_price">
+                        <p>Price</p>
+                        <button class="remove_button" onclick="RemoveFromCart()">Remove</button>
                     </div>
-                </div>
-            </template>
+                </template>
+            </div>
         </div>
         <div class="totals-wrapper">
             <div class="totals">
