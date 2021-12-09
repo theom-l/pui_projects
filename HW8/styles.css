@@ -1,0 +1,26 @@
+.project-tile { 
+
+}
+
+.project-tile:hover { 
+    opacity: .5;
+    transform: translate(-6px,-6px);
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+
+.cover-cta-text {
+    font-weight: lighter;
+}
+
+.cover-cta-text:hover {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    font-weight: bold;
+}
