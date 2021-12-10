@@ -1,4 +1,5 @@
 
+/* Project tile hover animation */
 .project-tile:hover { 
     opacity: .5;
     transform: translate(-6px,-6px);
@@ -20,10 +21,6 @@
 
 .navbar-brand:hover {
     font-weight: bold;
-}
-
-.teal-bg {
-    background-color: #BDC8CE;
 }
 
 .teal-bg {
