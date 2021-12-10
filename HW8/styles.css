@@ -27,6 +27,10 @@
     background-color: #BDC8CE;
 }
 
+.lightgreen-bg {
+    background-color: #E2F5DF;
+}
+
 /* CSS gradient animation */
 .cover-bg {
 	background: linear-gradient(-45deg, #ffffff, #9caad8, #c5bce7, #dbdbdb);
