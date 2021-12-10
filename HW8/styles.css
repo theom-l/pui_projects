@@ -28,3 +28,27 @@
 .teal-bg {
     background-color: #BDC8CE;
 }
+
+.teal-bg {
+    background-color: #BDC8CE;
+}
+
+/* CSS gradient animation */
+.cover-bg {
+	background: linear-gradient(-45deg, #ffffff, #9caad8, #c5bce7, #dbdbdb);
+	background-size: 600% 600%;
+	animation: gradient 20s ease infinite;
+    height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
