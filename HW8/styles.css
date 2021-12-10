@@ -24,3 +24,7 @@
 .navbar-brand:hover {
     font-weight: bold;
 }
+
+.teal-bg {
+    background-color: #BDC8CE;
+}
